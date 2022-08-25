@@ -1,0 +1,292 @@
+:root {
+  --cyan: #38fff5;
+  --violet: #231561;
+  --blue: #2374ab;
+  --flMagenta: #ff2353;
+  --fadePink: #801028;
+  }
+  
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  hr {
+      clear:both;
+      display:block;
+      width: 100%;               
+    }
+  
+  header {
+      flex-direction: column;
+      justify-content: center;
+      height: 100px;
+      background: rgb(128,16,40);
+      background: linear-gradient(180deg, rgba(128,16,40,1) 0%, rgba(255,35,83,1) 50%, rgba(255,35,83,1) 100%);
+  }
+  
+  header h1 {
+      margin-right: 5px;
+      margin-bottom: 5px;
+  }
+  
+  .nameL {
+      background-color: var(--cyan);
+      width: fit-content;
+      padding-left: 25px;
+      padding-right: 5px;
+      align-items: center;
+      border: 1px solid black;
+  }
+  
+  #navSec a {
+      display: flex;
+      flex-direction: row;
+      float: right;
+      margin-right: 10px;
+      background-color: var(--cyan);
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 2px;
+      text-decoration: none;
+      color: black;
+      box-shadow: 4px 2px 5px rgb(82, 82, 82);
+  }
+  #navSec a:hover  {
+    scale: 1.1;
+    box-shadow: 8px 4px 8px rgb(82, 82, 82);
+  }
+  
+  main {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  #aboutMe {
+      display: flex;
+      padding: 2%;
+      align-items: center;
+  }
+  
+  #aboutMe h2  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #aboutMe img {
+      height: 250px;
+      padding-right: 2%;
+  } 
+  
+  #workBig img {
+      height: 300px;
+      margin: 5px;
+      border: 5px solid var(--cyan);
+      justify-content: center;
+      align-items: center;
+      box-shadow: 8px 2px 5px var(--cyan)
+  }
+  
+  #workBig img:hover {
+      box-shadow: 16px 6px 10px rgb(82, 82, 82);
+      transform: scale(1.1);
+      transition-duration: .1s;
+  }
+  
+  #work {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+  }
+  
+  #work h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .workImg {
+      height: 200px;
+      width: 400px;
+      margin: 5px;
+      border: 5px solid var(--cyan);
+
+  }
+  
+  .workImg:hover {
+      box-shadow: 8px 2px 5px rgb(82, 82, 82);
+      transform: scale(1.1);
+      transition-duration: .1s;
+  }
+
+  .page-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flip-card {
+    margin-bottom: 2px;
+  }
+  
+  
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      background: rgb(128,16,40);
+      background: linear-gradient(0deg, rgba(128,16,40,1) 0%, rgba(255,35,83,1) 50%, rgba(255,35,83,1) 100%);
+      color: white;
+      font-weight: bold;
+  }
+  
+  
+  footer section{
+      display: flex;
+      flex-direction: row;
+      float: right;
+      margin-right: 10px;
+      background-color: var(--cyan);
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 2px;
+      color: black;
+  }
+  
+  footer section a {
+      text-decoration: none;
+      color: black;
+      box-shadow: 4px 2px 5px rgb(82, 82, 82);
+  }
+  
+  .FB:hover {
+    transform: scale(1.1) ;
+    box-shadow: 6px 4px 8px rgb(82, 82, 82);
+  }
+  
+  footer div {
+      padding-bottom: 5px;
+  }
+  
+  .click {
+      user-select: all;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--blue);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  @media screen and (max-width:830px) {
+      #workBig img {
+          height: 200px;
+      }
+      .workImg {
+          height: 125px;
+          width: auto;
+      }
+  }
+  
+  @media screen and (max-width:550px) {
+      #workBig img {
+          height: 125px;
+      }
+      .workImg {
+          height: 100px;
+          width: auto;
+      }
+  }
+  
+  @media screen and (max-width:280px) {
+      #navSec a {
+          padding: 0;
+          margin-right: 5px
+      }
+  
+      header h1   {
+          margin-bottom: 2px;
+      }
+      
+      #workBig img{
+          height: 100px;
+      }
+      .workImg {
+          height: 100px;
+          width: auto;
+      }
+  }
+  
+  @media screen and (max-width:400px) {
+     #aboutMe img {
+      height: 100px;
+     }
+  
+     #workBig img a {
+      height: 200px;
+     }
+     .workImg {
+      height: 150px;
+      width: auto;
+     }
+     
+  }
+  
+  @media screen and (max-width:720px) {
+      #aboutMe img {
+      height: 100px;
+      }    
+      .workImg {
+          height: 100px;
+          width: auto;
+      }
+  }
