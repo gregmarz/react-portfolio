@@ -8,6 +8,14 @@
 
 This is my previous portfolio but updated slightly, as well as using the react JavaScript framework.
 
+## Tools Used
+
+- JavaScript
+- HTML
+- CSS
+- React
+
+
 ## Link
 
 [https://gregmarz.github.io/react-portfolio/ ](https://gregmarz.github.io/react-portfolio/)
