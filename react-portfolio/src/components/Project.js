@@ -4,6 +4,8 @@ import aboutMe from "../images/about_me.png";
 import codeSnip from "../images/code_snip.png";
 import horiseon from "../images/horiseon.png";
 import miniProj from "../images/mini_proj.png";
+import onlyfarms from "../images/onlyfarms.png";
+import tdt from "../images/tdt.png";
 
 function Project() {
     return (
@@ -53,7 +55,34 @@ function Project() {
                     />
                 </a>
             </section>
+            <section>
+                <h3>The Daily trending</h3>
+                <a
+                    href="https://qosole.github.io/daily-trending/"
+                    target="_blank"
+                >
+                    <img
+                        className="workImg"
+                        src={tdt}
+                        alt="the daily trending project 2"
+                    />
+                </a>
+            </section>
+            <section>
+                <h3>OnlyFarms Farm Tracker</h3>
+                <a
+                    href="https://onlyfarms.herokuapp.com/"
+                    target="_blank"
+                >
+                    <img
+                        className="workImg"
+                        src={onlyfarms}
+                        alt="only farms website project 1"
+                    />
+                </a>
+            </section>
         </div>
+
     )
 }
 export default Project;
